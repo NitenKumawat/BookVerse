@@ -18,7 +18,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "https://book-verse-flax.vercel.app/", credentials: true }));
+app.use(cors({ origin: "https://book-verse-flax.vercel.app", credentials: true }));
 
 // API Routes
 app.use("/api/auth", authRoutes);

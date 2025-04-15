@@ -1,6 +1,6 @@
 # 📚 BookVerse - Modern Book E-commerce Platform
 
-Welcome to **BookVerse**, a full-featured book e-commerce platform built using the **MERN stack**, with advanced filtering, cart functionality, OTP-based login, and a smooth checkout flow. This project integrates core computer science concepts like **sliding window** and **two-pointer algorithms** with modern web development practices.
+Welcome to **BookVerse**, a full-featured book e-commerce platform built using the **MERN stack**, with advanced filtering, cart functionality, and a smooth checkout flow. This project integrates core computer science concepts like **sliding window** and **two-pointer algorithms** with modern web development practices.
 
 ---
 

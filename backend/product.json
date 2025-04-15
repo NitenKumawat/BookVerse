@@ -1,0 +1,201 @@
+[
+    {
+      "name": "The Great Gatsby",
+      "category": "Fiction",
+      "price": 12.99,
+      "rating": 4.7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_WFZuwvGSOLf8KZy0gvQcpI-p4wJWu0n6DQ&s",
+      "description": "A classic novel by F. Scott Fitzgerald.",
+      "discount": 10
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "category": "Fiction",
+      "price": 14.99,
+      "rating": 4.9,
+      "imageUrl": "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg",
+      "description": "A timeless classic by Harper Lee.",
+      "discount": 5
+    },
+    {
+      "name": "Atomic Habits",
+      "category": "Self-Help",
+      "price": 18.99,
+      "rating": 4.8,
+      "imageUrl": "https://www.bookishadda.com/cdn/shop/files/230_f298f5c0-c116-4280-bef6-5d00db25b743.png?v=1701690525",
+      "description": "A book on habit-building by James Clear.",
+      "discount": 15
+    },
+    {
+      "name": "The Psychology of Money",
+      "category": "Finance",
+      "price": 16.99,
+      "rating": 4.6,
+      "imageUrl": "https://prodimage.images-bn.com/pimages/9781804090114_p0_v2_s1200x630.jpg",
+      "description": "A book on financial wisdom by Morgan Housel.",
+      "discount": 12
+    },
+    {
+      "name": "Sapiens: A Brief History of Humankind",
+      "category": "History",
+      "price": 22.99,
+      "rating": 4.9,
+      "imageUrl": "https://www.eourmart.com/cdn/shop/products/Sapiens2.png?v=1672129592&width=1445",
+      "description": "A historical perspective by Yuval Noah Harari.",
+      "discount": 8
+    },
+    {
+      "name": "The Lean Startup",
+      "category": "Business",
+      "price": 19.99,
+      "rating": 4.7,
+      "imageUrl": "https://miro.medium.com/v2/resize:fit:857/1*PiDV4yruoERWbQwKtwWlBw.png",
+      "description": "A book on startups by Eric Ries.",
+      "discount": 10
+    },
+    {
+      "name": "Deep Work",
+      "category": "Productivity",
+      "price": 15.99,
+      "rating": 4.7,
+      "imageUrl": "https://m.media-amazon.com/images/I/71din4TLubL._UF1000,1000_QL80_.jpg",
+      "description": "A book on focus by Cal Newport.",
+      "discount": 10
+    },
+    {
+      "name": "The Subtle Art of Not Giving a F*ck",
+      "category": "Self-Help",
+      "price": 17.99,
+      "rating": 4.5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Sq6qyg3JCZ7uMau_WNJ-nwo2TRVEhpI_FA&s",
+      "description": "A self-improvement book by Mark Manson.",
+      "discount": 10
+    },
+    {
+      "name": "The Alchemist",
+      "category": "Fiction",
+      "price": 13.99,
+      "rating": 4.8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScOC99_4dUYlDk5p9wILyRkr4GfYI5kQrF2w&s",
+      "description": "A magical novel by Paulo Coelho.",
+      "discount": 5
+    },
+    {
+      "name": "A Brief History of Time",
+      "category": "Science",
+      "price": 21.99,
+      "rating": 4.9,
+      "imageUrl": "https://example.com/brief-history-time.jpg",
+      "description": "A book on cosmology by Stephen Hawking.",
+      "discount": 12
+    },
+    {
+      "name": "The 5 AM Club",
+      "category": "Self-Help",
+      "price": 14.99,
+      "rating": 4.6,
+      "imageUrl": "https://images.blinkist.io/images/books/53048af534393700084e0000/1_1/470.jpg",
+      "description": "A book on morning routine by Robin Sharma.",
+      "discount": 8
+    },
+    {
+      "name": "Rich Dad Poor Dad",
+      "category": "Finance",
+      "price": 12.99,
+      "rating": 4.7,
+      "imageUrl": "https://gyaanstore.com/cdn/shop/files/240_110f4f1b-4f70-40a6-8bab-343e71b4832f.png?v=1701690950&width=1946",
+      "description": "A financial classic by Robert Kiyosaki.",
+      "discount": 5
+    },
+    {
+      "name": "The Power of Now",
+      "category": "Spirituality",
+      "price": 16.99,
+      "rating": 4.8,
+      "imageUrl": "https://www.hachette.co.nz/images/9780733627514.jpg",
+      "description": "A guide to spiritual enlightenment by Eckhart Tolle.",
+      "discount": 10
+    },
+    {
+      "name": "The Four Agreements",
+      "category": "Self-Help",
+      "price": 14.99,
+      "rating": 4.7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTo7SFiJC_BYEfz-kHtT7ZP6n4lI9WQj9Awg&s",
+      "description": "A book on personal freedom by Don Miguel Ruiz.",
+      "discount": 7
+    },
+    {
+      "name": "Zero to One",
+      "category": "Business",
+      "price": 18.99,
+      "rating": 4.7,
+      "imageUrl": "https://muskurado.com/wp-content/uploads/2023/12/Zero-To-One_1.jpg",
+      "description": "A startup guide by Peter Thiel.",
+      "discount": 15
+    },
+    {
+      "name": "Thinking, Fast and Slow",
+      "category": "Psychology",
+      "price": 19.99,
+      "rating": 4.8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWWkofWZ-nFja35cB_42v2pJnSEIBLCHKOw&s",
+      "description": "A book on human thinking by Daniel Kahneman.",
+      "discount": 10
+    },
+    {
+      "name": "The Code Breaker",
+      "category": "Science",
+      "price": 22.99,
+      "rating": 4.6,
+      "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/book/m/j/o/the-code-breaker-young-readers-edition-original-imagmyyr7zjsbfyp.jpeg?q=20&crop=false",
+      "description": "A book on gene editing by Walter Isaacson.",
+      "discount": 12
+    },
+    {
+      "name": "Educated",
+      "category": "Biography",
+      "price": 16.99,
+      "rating": 4.9,
+      "imageUrl": "https://m.media-amazon.com/images/I/71-4MkLN5jL._AC_UF1000,1000_QL80_.jpg",
+      "description": "A memoir by Tara Westover.",
+      "discount": 8
+    },
+    {
+      "name": "Dune",
+      "category": "Sci-Fi",
+      "price": 17.99,
+      "rating": 4.8,
+      "imageUrl": "https://m.media-amazon.com/images/I/81Ua99CURsL._AC_UF1000,1000_QL80_.jpg",
+      "description": "A sci-fi epic by Frank Herbert.",
+      "discount": 10
+    },
+    {
+      "name": "1984",
+      "category": "Dystopian",
+      "price": 14.99,
+      "rating": 4.7,
+      "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/book/m/c/5/-original-imagqtdt7tnzf8dk.jpeg?q=90&crop=false",
+      "description": "A dystopian classic by George Orwell.",
+      "discount": 10
+    },
+    {
+      "name": "The Hobbit",
+      "category": "Fantasy",
+      "price": 16.99,
+      "rating": 4.9,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Hobbit_cover.JPG/170px-Hobbit_cover.JPG",
+      "description": "A fantasy novel by J.R.R. Tolkien.",
+      "discount": 8
+    },
+    {
+      "name": "Brave New World",
+      "category": "Dystopian",
+      "price": 15.99,
+      "rating": 4.6,
+      "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/book/e/a/4/brave-new-world-original-imahfs6hjxjgzhdf.jpeg?q=90&crop=false",
+      "description": "A dystopian novel by Aldous Huxley.",
+      "discount": 7
+    }
+  ]
+  

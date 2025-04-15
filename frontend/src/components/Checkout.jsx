@@ -12,26 +12,42 @@ const Checkout = ({ cartItems, totalPrice, totalDiscount, finalAmount, setShowCh
   const [step, setStep] = useState(1);
   const [paymentMethod, setPaymentMethod] = useState("COD");
   const [orderPlaced, setOrderPlaced] = useState(false);
-
   const [address, setAddress] = useState({
     street: "",
     city: "",
     state: "",
-    postalCode: "",
+    postalcode: "",  // Store postalcode in state
     country: "",
   });
-
+  
   const handlePlaceOrder = () => {
     if (!user) {
       alert("Please log in first.");
       return;
     }
-
-    if (!address.street || !address.city || !address.state || !address.postalCode || !address.country) {
-      alert("⚠️ Please fill in all address fields.");
+  
+    // Validate address fields to make sure none are empty
+    const { street, city, state, postalcode, country } = address;
+    if (!street || !city || !state || !postalcode || !country) {
+      alert("Please fill in all the address fields.");
       return;
     }
-
+  
+    console.log("Placing order with the following data:", {
+      userId: user._id,
+      items: cartItems,
+      totalAmount: finalAmount,
+      discountApplied: totalDiscount,
+      paymentMethod,
+      address: {
+        street,
+        city,
+        state,
+        postalCode: postalcode,  // Map postalcode to postalCode for the database
+        country,
+      },
+    });
+  
     const orderData = {
       userId: user._id,
       items: cartItems.map((item) => ({
@@ -45,9 +61,15 @@ const Checkout = ({ cartItems, totalPrice, totalDiscount, finalAmount, setShowCh
       totalAmount: finalAmount,
       discountApplied: totalDiscount,
       paymentMethod,
-      address,
+      address: {
+        street,
+        city,
+        state,
+        postalCode: postalcode,  // Convert to postalCode
+        country,
+      },
     };
-
+  
     dispatch(placeOrder(orderData))
       .unwrap()
       .then(() => {
@@ -56,6 +78,7 @@ const Checkout = ({ cartItems, totalPrice, totalDiscount, finalAmount, setShowCh
       })
       .catch((err) => alert("⚠️ Failed to place order: " + err));
   };
+  
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-gradient-to-r from-blue-50 to-purple-50 shadow-xl rounded-lg mt-6">

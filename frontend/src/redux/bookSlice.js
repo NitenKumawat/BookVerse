@@ -1,9 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const API_URL = import.meta.env.VITE_API_URL;
 
 // ✅ Fetch Categories
 export const fetchCategories = createAsyncThunk("books/fetchCategories", async () => {
-  const response = await axios.get("http://localhost:5000/api/products/categories");
+  const response = await axios.get(`${API_URL}/products/categories`);
   return response.data;
 });
 
@@ -11,7 +12,7 @@ export const fetchCategories = createAsyncThunk("books/fetchCategories", async (
 export const fetchBooksByCategory = createAsyncThunk(
   "books/fetchByCategory",
   async ({ category, page = 1 }) => {
-    const response = await axios.get(`http://localhost:5000/api/products?category=${category}&page=${page}`);
+    const response = await axios.get(`${API_URL}/products?category=${category}&page=${page}`);
     return response.data;
   }
 );

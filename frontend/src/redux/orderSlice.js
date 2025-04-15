@@ -2,14 +2,16 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // ✅ Define Backend API Base URL
-const API_BASE_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL;
+
+
 
 // 🛒 Place Order (Async Action)
 export const placeOrder = createAsyncThunk(
   "orders/placeOrder",
   async (orderData, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/orders/place`, orderData, { withCredentials: true });
+      const response = await axios.post(`${API_URL}/orders/place`, orderData, { withCredentials: true });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || "Failed to place order");
@@ -22,7 +24,7 @@ export const fetchOrders = createAsyncThunk(
   "orders/fetchOrders",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/orders`, { withCredentials: true });
+      const response = await axios.get(`${API_URL}/orders`, { withCredentials: true });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || "Failed to fetch orders");
@@ -35,7 +37,7 @@ export const updateOrderStatus = createAsyncThunk(
   "orders/updateStatus",
   async ({ orderId, status }, { rejectWithValue }) => {
     try {
-      const response = await axios.put(`${API_BASE_URL}/orders/${orderId}/status`, { status }, { withCredentials: true });
+      const response = await axios.put(`${API_URL}/orders/${orderId}/status`, { status }, { withCredentials: true });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || "Failed to update order status");
@@ -48,7 +50,7 @@ export const cancelOrder = createAsyncThunk(
   "orders/cancelOrder",
   async (orderId, { rejectWithValue }) => {
     try {
-      const response = await axios.put(`${API_BASE_URL}/orders/${orderId}/cancel`, {}, { withCredentials: true });
+      const response = await axios.put(`${API_URL}/orders/${orderId}/cancel`, {}, { withCredentials: true });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || "Failed to cancel order");

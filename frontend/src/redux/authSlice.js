@@ -1,12 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 // 🔹 Login Thunk
 export const loginUser = createAsyncThunk("auth/login", async (userData, thunkAPI) => {
   try {
-    const response = await axios.post(`${API_URL}/login`, userData, { withCredentials: true });
+    const response = await axios.post(`${API_URL}/auth/login`, userData, { withCredentials: true });
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response?.data || "Login failed");
@@ -16,7 +17,7 @@ export const loginUser = createAsyncThunk("auth/login", async (userData, thunkAP
 // 🔹 Fetch User Thunk (Auto-Logout on Expired Session)
 export const fetchUser = createAsyncThunk("auth/fetchUser", async (_, { dispatch, rejectWithValue }) => {
   try {
-    const response = await axios.get(`${API_URL}/me`, { withCredentials: true });
+    const response = await axios.get(`${API_URL}/auth/me`, { withCredentials: true });
     return response.data;
   } catch (error) {
     if (error.response?.status === 401) {
@@ -29,7 +30,7 @@ export const fetchUser = createAsyncThunk("auth/fetchUser", async (_, { dispatch
 // 🔹 Logout Thunk
 export const logoutUser = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
   try {
-    await axios.post(`${API_URL}/logout`, {}, { withCredentials: true });
+    await axios.post(`${API_URL}/auth/logout`, {}, { withCredentials: true });
     return null;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response?.data || "Logout failed");
